@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function tryRemoveFromArray(arr) {
+        var n =parseInt(prompt("input the number, the you want to remove."))
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] == n) {
+                for (let j = i; j < arr.length; j++) {
+                    arr[j] = arr [j + 1];
+                }
+                arr.pop();
+            }
+        }
+    }
+    let a = [12,6,3,7,21,5,7];
+    tryRemoveFromArray(a);
+    alert(a)
+    let b=[12,6,3,7,21,5,7]
+    tryRemoveFromArray(b);
+    alert(b)
+    let c=[12,6,3,7,21,5,7]
+    tryRemoveFromArray(c)
+    alert(c)
+    let d=[12,6,3,7,2,3,1,2,4,31,5,7]
+    tryRemoveFromArray(d)
+    alert(d)
+
+</script>
+</body>
+</html>
